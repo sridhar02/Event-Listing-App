@@ -6,11 +6,11 @@ const useConferenceStyles = makeStyles((theme) => ({
     margin: "10px",
     border: "1px solid black",
     width: "320px",
-    height: "380px",
+    height: "390px",
   },
   image: {
     textAlign: "center",
-    height: "200px",
+    height: "180px",
     width: "200px",
   },
   text: {
@@ -19,6 +19,10 @@ const useConferenceStyles = makeStyles((theme) => ({
   title: {
     margin: "6px",
     fontWeight: "bold",
+    fontSize: "15px",
+  },
+  link: {
+    textDecoration: "none",
   },
 }));
 
@@ -43,7 +47,9 @@ export default function Conference({ conference }) {
           Place: {conference.country}
         </Typography>
         <Typography className={classes.text} variant="body2">
-          <a href={`${conference.confUrl}`}>Conference Link</a>
+          <a className={classes.link} href={`${conference.confUrl}`}>
+            Conference Link
+          </a>
         </Typography>
       </CardContent>
     </Card>
