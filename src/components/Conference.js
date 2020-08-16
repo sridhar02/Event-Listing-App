@@ -11,7 +11,7 @@ const useConferenceStyles = makeStyles((theme) => ({
   image: {
     textAlign: "center",
     height: "180px",
-    width: "200px",
+    width: "240px",
   },
   text: {
     margin: "6px",
