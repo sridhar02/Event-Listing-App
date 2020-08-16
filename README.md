@@ -13,7 +13,10 @@
 
 > npm install
 
+* Create a .env file and mention the backend API Linkand the start the server.
+
 > npm start
+
 
 
 
